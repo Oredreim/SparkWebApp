@@ -14,7 +14,7 @@ public class IEXHttpStockService extends HttpStockService{
      */
     @Override
     public String getURL() {
-        return "https://cloud.iexapis.com/stable/stock/"+stock+"/quote?token=pk_8a6cc2e8c79a4d01a8e938fb171f1d9c";
+        return "https://cloud.iexapis.com/stable/stock/"+stock+"/quote?token=pk_88028f6b749e43ae90f8514fc956f4a6";
     }
 
     /**

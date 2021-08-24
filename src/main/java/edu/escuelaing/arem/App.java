@@ -29,7 +29,6 @@ public class App {
         port(getPort());;
         get("/facadealpha", "application/json", (req, res) -> facadeAlpha(req,res));
         get("/facadeiex", "application/json", (req, res) -> facadeIex(req,res));
-        get("/JSClient", (req, res) -> facadeJSClient(req,res));
     }
 
     /**
@@ -83,34 +82,5 @@ public class App {
             Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
         }
         return response;
-    }
-
-    /**
-     * Metodo que despliega el cliente java script
-     * @param req Requisitos encomendados por la URL
-     * @param res Responsabilidades impuestas por la URL
-     * @return cadena que contiene la estructura que se vera en pantalla
-     */
-    private static String  facadeJSClient(Request req, Response res){
-        String api = req.queryParams("api");
-        String stock = req.queryParams("st");
-        String pageContent="";
-        if(api==null){
-            api="";
-        }
-        if(stock==null || stock==""){
-            pageContent=JsClient.Principal();
-        }
-        try{
-            if(api.equalsIgnoreCase("facadeiex")){
-                pageContent=facadeIex(req,res);
-            }
-            else if(api.equalsIgnoreCase("facadealpha")){
-                pageContent=facadeAlpha(req,res);
-            }
-        }catch (NullPointerException ex){
-            Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return pageContent;
     }
 }
