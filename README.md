@@ -85,7 +85,7 @@
 * [Java Script](https://es.wikipedia.org/wiki/JavaScript): Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.
 
 ## Autor
-[Richard Santiago Urrea Garcia](https://github.com/RichardUG)
+[Cristian Camilo Piñeros Arevalo](https://github.com/Oredreim)
 
 ## Licencia & Derechos de Autor
 **©** Cristian Camilo Piñeros Arevalo, Estudiante de Ingeniería de Sistemas de la Escuela Colombiana de Ingeniería Julio Garavito
